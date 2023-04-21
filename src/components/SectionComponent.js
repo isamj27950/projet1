@@ -1,69 +1,33 @@
 import TitleSection from "./TitleSection";
+import CardComponent from "./cards/CardComponent";
 import CardComponents from "./navigation/CardComponents";
-
+import { dataCardComponent } from "../data/dataCardsComponent";
 
 export default function SectionComponent() {
   return (
-    <div>
-              <div className="py-2 px-20 bg-blue-200">
-        <TitleSection
-        title="Components"
-        subtile="Most used widgets"
-        description='Provides frequently used components for building websites using Tailwind CSS'
+    <section className="bg-blue-100 py-20 px-20" >
+      
+          <TitleSection
+          title="Components"
+          subtile="Most used widgets"
+          description='Provides frequently used components for building websites using Tailwind CSS'
         />
-      </div>
-      <CardComponents
-      img=""
-      title="Headers"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
+      
+      <div className="grid grid-cols-3 gap-4 pt-16" >
+      { dataCardComponent.map((item,index)=> (
+            <CardComponent
+              key={index}
+              url_img={item.ficon}
+              title={item.title}
+              desc={item.content}
+          />
+      
+          )
+        )}
+        </div>
+      
+        
 
-      />
-      <CardComponents
-      img=""
-      title="Content"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-
-      />
-      <CardComponents
-      img=""
-      title="Testimonial"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-
-      />
-    <CardComponents
-      img=""
-      title="Heros"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-
-      />
-      <CardComponents
-      img=""
-      title="Cal-to-Action"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-      />
-      <CardComponents
-      img=""
-      title="Contact"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-      />
-      <CardComponents
-      img=""
-      title="Feature"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-      />
-      <CardComponents
-      img=""
-      title="Pricing"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-      />
-      <CardComponents
-      img='img/4.png' alt="mur blanc avec horloge"
-      title="Footers"
-      desc="In general, headers, contain information that makes ileasier for visitors to  interact with the website."
-      />
-
-
-
-    </div>
+    </section>
   )
 }

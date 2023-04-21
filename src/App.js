@@ -4,7 +4,7 @@ import Navbar from './components/navigation/Navbar';
 import Hero from './components/Hero';
 import SectionFeatures from './components/SectionFeatures';
 import SectionInsideTemplate from './components/SectionInsideTemplate';
-import SectionGet from './components/SectionGet';
+import SectionStep from './components/SectionStep';
 import SectionComponent from './components/SectionComponent';
 import SectionBlog from './components/SectionBlog';
 import SectionFaqs from './components/SectionFaqs';
@@ -18,10 +18,10 @@ function App() {
       <Hero />
       <main>
         <SectionFeatures />
-        {/* <SectionInsideTemplate/> */}
-        {/* <SectionGet/>
+        {/*<SectionInsideTemplate/> */}
+        <SectionStep/>
         <SectionComponent/>
-        <SectionBlog/>
+        {/*<SectionBlog/>
         <SectionFaqs/>
         <SectionAstro /> */}
       </main>

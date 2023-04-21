@@ -1,7 +1,5 @@
 
-export default function CardFeatures() {
-  return (
-    <div className="flex">
+        /*<div className="flex">
         <div className="px-10"> 
             <div className="mx-10 "> 
                 <img src="" alt="" />
@@ -50,6 +48,6 @@ export default function CardFeatures() {
         </div>
      </div> 
     
-    )
-    
-}
+    </div>
+  )
+}/*}

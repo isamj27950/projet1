@@ -6,13 +6,13 @@ import { dataCards } from "../data/dataCardsFeatures";
 export default function SectionFeatures() {
   
   return (
-    <section className="py-20">
-      <div className="bg-blue-200 py-10 flex justify center   space-x-5">
+    <section className="py-20 ">
+      <div className="bg-blue-200 py-10 flex justify-center    space-x-5">
         <BsInfoSquare className="text-2xl"/>
         <p>Philosophie : Simplicité, Bonnes pratiques ert hautes performances.</p>
 
       </div>
-      <div className="px-20 pb-20">
+      <div className="px-20 py-20">
         <TitleSection 
         title="Features"
         subtile="Ce que vous obtenez avec AstroWind"
@@ -20,7 +20,7 @@ export default function SectionFeatures() {
         />
       </div>
       <div className="px-20 pb-12">
-      <div className="grid grid-cols-2 gap-y-8" >
+      <div className="grid grid-cols-2 gap-y-8 text-start" >
       {
           dataCards.map((item,index)=> (
             <CardFeatures

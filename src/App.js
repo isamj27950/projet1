@@ -18,12 +18,12 @@ function App() {
       <Hero />
       <main>
         <SectionFeatures />
-        {/*<SectionInsideTemplate/> */}
+        <SectionInsideTemplate/>
         <SectionStep/>
         <SectionComponent/>
-        {/*<SectionBlog/>
+        <SectionBlog/>
         <SectionFaqs/>
-        <SectionAstro /> */}
+        <SectionAstro /> 
       </main>
       <Footer/>
       
